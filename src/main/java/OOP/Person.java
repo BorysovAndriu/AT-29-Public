@@ -32,7 +32,7 @@ public class Person {
         return this;
     }
 
-    public static void foo() {
+   /* public static void foo() {
         System.out.println("test test ");
-    }
+    }*/
 }
