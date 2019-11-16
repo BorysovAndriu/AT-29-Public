@@ -1,3 +1,5 @@
+package HomeWork_1;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomData {
@@ -15,7 +17,7 @@ public class RandomData {
         return randomNum;
     }
 
-    static int[] setArray(){
+    public static int[] setArray(){
         int[] arrVal = new int[10];
 
         for(int i = 0; i<arrVal.length; i++){
