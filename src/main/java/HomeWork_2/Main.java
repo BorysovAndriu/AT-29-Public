@@ -30,6 +30,6 @@ public class Main {
         }
         System.out.println("not pair values of Array");
 
-        array.indexPAirValueArray();
+        array.indexPairValueArray();
     }
 }
