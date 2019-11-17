@@ -1,2 +1,2 @@
-# AT-29
-course automation
+# AT-29-Public
+automation testing
