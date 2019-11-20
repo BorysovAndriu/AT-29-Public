@@ -16,6 +16,6 @@ public class Main {
         codeSchoolPage.moreDetailsClick();
 
         JavaAdvancePage javaAdvancePage = new JavaAdvancePage();
-
+        javaAdvancePage.openTimeTable();
     }
 }

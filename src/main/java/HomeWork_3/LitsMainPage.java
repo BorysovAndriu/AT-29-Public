@@ -28,19 +28,19 @@ public class LitsMainPage {
     }
     public boolean verifyInt(int s1, int s2){
         if(s1 == s2){
-            System.out.println("Verify - OK");
+            System.out.println("Verify " + s2 + " - True");
             return true;
         }else {
-            System.out.println("Verify - False");
+            System.out.println("Verify"+ s2 +" - False");
             return false;
         }
     }
     public boolean verify(String s1, String s2){
         if(s1.equals(s2)){
-            System.out.println("Verify - OK");
+            System.out.println("Verify " + s2 + " - True");
             return true;
         }else {
-            System.out.println("Verify - False");
+            System.out.println("Verify"+ s2 +" - False");
             return false;
         }
     }
