@@ -18,12 +18,23 @@ public class Main {
 
         Person.foo();*/
 
-        int i = 0;
+        /*int i = 0;
         while(i<10){
             i++;
             if(i%2==0){
                 System.out.println(i);
             }
-        }
+        }*/
+
+        Person develop = new Develop("Jon, ", 100);
+
+        develop = new PM("free", 4, "UA");
+        develop.whoAmI();
+
+        develop.setName("dsdsdsdsd");
+        develop.whoAmI();
+
+        develop = new Develop("DELOP", 999999);
+        develop.whoAmI();
     }
 }
