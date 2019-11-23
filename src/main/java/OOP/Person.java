@@ -2,13 +2,14 @@ package OOP;
 
 public class Person {
 
-    String name;
+    private String name;
     int age;
     char nameVal;
+    String primarySkill;
 
-    public Person(){
+    /*public Person(){
 
-    }
+    }*/
 
     public Person(String name){
         this.name=name;
@@ -17,6 +18,12 @@ public class Person {
     public Person(String name, int age){
         this.name = name ;
         this.age = age;
+    }
+
+    public Person(){
+        this.name = name ;
+        this.age = age;
+        this.primarySkill=primarySkill;
     }
 
 
@@ -28,11 +35,17 @@ public class Person {
         return age;
     }
 
-    public Person getPerson() {
-        return this;
+    public String getName() {
+        return name;
     }
 
-   /* public static void foo() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /* public static void foo() {
         System.out.println("test test ");
     }*/
+
+
 }
