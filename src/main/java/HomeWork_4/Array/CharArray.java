@@ -9,7 +9,7 @@ public class CharArray extends Array {
     Scanner scanner;
 
     public void guestValueArray(){
-        char[] charArray=RandomData.randomCartArray();
+        char[] charArray=RandomData.randomCharArray();
         scanner = new Scanner(System.in);
         System.out.println("Wrote int value: ");
         char number = scanner.next().charAt(0);
@@ -30,22 +30,4 @@ public class CharArray extends Array {
             System.out.println("You lose (");
         }
     }
-
-    /*Do Not work yet problem with char
-    public char[] intValueFromCharArray(){
-        char[] charArray = RandomData.randomCartArray();
-        char[] intArray = {'1','2','3','4','5','6','7','8','9','0'};
-        char[] intFromCharArray = new char[charArray.length/2];
-
-        for(int i =0; i<charArray.length; i++){
-            char number = charArray[i];
-            if(number==(intArray[i])){
-                intFromCharArray[i] = number;
-            }
-        }
-        for(int i : intFromCharArray){
-            System.out.println(intFromCharArray[i]);
-        }
-        return intFromCharArray;
-    }*/
 }

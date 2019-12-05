@@ -31,7 +31,7 @@ public class TestClass {
 
         //Second task
         //show date
-        for(int i : RandomData.setArray()){
+        for(int i : RandomData.setArray(10)){
             if(i % 2 == 0){
                 System.out.println("/2 = " + i);
             } else if (i % 3 ==0){
@@ -44,7 +44,7 @@ public class TestClass {
         }
 
         //Threth task
-        int[] arr = RandomData.setArray();
+        int[] arr = RandomData.setArray(10);
 
         for (int i = arr.length-1; i > 0 ; i--) {
             for (int j = 0 ; j < i ; j++) {

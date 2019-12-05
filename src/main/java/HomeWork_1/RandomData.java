@@ -18,8 +18,8 @@ public class RandomData {
         return randomNum;
     }
 
-    public static int[] setArray() {
-        int[] arrVal = new int[10];
+    public static int[] setArray(int sizeArray) {
+        int[] arrVal = new int[sizeArray];
 
         for (int i = 0; i < arrVal.length; i++) {
             arrVal[i] = RandomData.ramdomInt();
@@ -29,7 +29,7 @@ public class RandomData {
         return arrVal;
     }
 
-    public static char[] randomCartArray(){
+    public static char[] randomCharArray(){
         char[] randomCharArray = new char[10];
         String randomChar = "12345abcde";
         Random r = new Random();

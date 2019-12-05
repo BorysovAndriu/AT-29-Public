@@ -2,15 +2,6 @@ package HomeWork_4.Array;
 
 public class IntegerArray extends Array {
 
-    public int sumArrayNumber(){
-        int sumArray=0;
-        for(int i : setArray()){
-            sumArray += setArray()[i];
-        }
-        System.out.println("sum of arrat = " + sumArray);
-        return sumArray;
-    }
-
     public double averageArrayValue(){
         double averageValue = 0;
         for (int i : setArray()){

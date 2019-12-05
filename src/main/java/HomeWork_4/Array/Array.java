@@ -2,7 +2,7 @@ package HomeWork_4.Array;
 
 public class Array {
 
-    public void showElementsArray(int[] array){
+    public static void showElementsArray(int[] array){
         for(int i =0; i< array.length; i++){
             System.out.print("[ " + array[i] + " ]");
         }
