@@ -1,5 +1,6 @@
 package HomeWork_1;
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomData {
@@ -10,21 +11,32 @@ public class RandomData {
     int c = ramdomInt();
     int e = ramdomInt();
 
-    static int ramdomInt(){
+    static int ramdomInt() {
         int randomNum = ThreadLocalRandom
                 .current()
                 .nextInt(0, 81 + 1);
         return randomNum;
     }
 
-    public static int[] setArray(){
-        int[] arrVal = new int[10];
+    public static int[] setArray(int sizeArray) {
+        int[] arrVal = new int[sizeArray];
 
-        for(int i = 0; i<arrVal.length; i++){
+        for (int i = 0; i < arrVal.length; i++) {
             arrVal[i] = RandomData.ramdomInt();
             System.out.print("[ " + arrVal[i] + " ]");
         }
         System.out.println("size - " + arrVal.length);
         return arrVal;
+    }
+
+    public static char[] randomCharArray(){
+        char[] randomCharArray = new char[10];
+        String randomChar = "12345abcde";
+        Random r = new Random();
+        for(int i = 0; i< randomCharArray.length; i++) {
+            randomCharArray[i] = randomChar.charAt(r.nextInt(randomCharArray.length));
+        }
+        System.out.println(randomCharArray);
+        return randomCharArray;
     }
 }

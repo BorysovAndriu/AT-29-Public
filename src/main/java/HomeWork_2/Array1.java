@@ -1,14 +1,14 @@
 package HomeWork_2;
 
-public class Array {
+public class Array1 {
 
     private int arr[];
 
-    public Array(int[] arr) {
+    public Array1(int[] arr) {
         this.arr = arr;
     }
 
-    public Array() {
+    public Array1() {
     }
 
     public double averageValue() {
