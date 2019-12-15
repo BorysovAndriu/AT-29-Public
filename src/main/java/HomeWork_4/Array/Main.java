@@ -13,5 +13,6 @@ public class Main {
         integerArray.sumPairNumberArray();
         CharArray charArray = new CharArray();
         charArray.guestValueArray();
+        charArray.showIntValueWithTableChar();
     }
 }

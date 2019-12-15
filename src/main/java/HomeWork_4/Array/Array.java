@@ -7,11 +7,6 @@ public class Array {
             System.out.print("[ " + array[i] + " ]");
         }
     }
-    public void showElementsArray(String[] array){
-        for(int i =0; i< array.length; i++){
-            System.out.print("[ " + array[i] + " ]");
-        }
-    }
 
     public int[] setArray(){
         int[] arrVal = new int[10];
