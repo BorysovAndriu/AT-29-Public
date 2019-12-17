@@ -4,6 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Main main = new Main();
+        try{
+            main.throwException("exception");
+
+        }catch (Issue | IssueTwo e){
+            System.out.println("some run catch");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("some run fa");
+        }
+
         /*Person person = new Person("Johm", 12);
         Person person1 = person.getPerson();
 
@@ -26,7 +38,7 @@ public class Main {
             }
         }*/
 
-        Person develop = new Develop("Jon, ", 100);
+        /*Person develop = new Develop("Jon, ", 100);
 
         develop = new PM("free", 4, "UA");
         develop.whoAmI();
@@ -35,6 +47,14 @@ public class Main {
         develop.whoAmI();
 
         develop = new Develop("DELOP", 999999);
-        develop.whoAmI();
+        develop.whoAmI();*/
+    }
+
+    public void throwException(String s) throws Issue, Exception{
+        System.out.println("run some code before exception");
+        if("exception".equals(s)) {
+            throw new Issue("Exception works fine");
+        }
+        System.out.println("run some code after exception");
     }
 }
