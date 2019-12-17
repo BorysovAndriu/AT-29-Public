@@ -8,8 +8,10 @@ public class CharArray extends Array {
 
     Scanner scanner;
 
+    char[] charArray=RandomData.randomCharArray();
+
     public void guestValueArray(){
-        char[] charArray=RandomData.randomCharArray();
+
         scanner = new Scanner(System.in);
         System.out.println("Wrote int value: ");
         char number = scanner.next().charAt(0);
@@ -28,6 +30,12 @@ public class CharArray extends Array {
             System.out.println("You WIN!!!");
         } else {
             System.out.println("You lose (");
+        }
+    }
+
+    public void showIntValueWithTableChar(){
+        for(int i =0; i< charArray.length; i++){
+            System.out.print((int)charArray[i] + " = [" + charArray[i] + "] ");
         }
     }
 }
